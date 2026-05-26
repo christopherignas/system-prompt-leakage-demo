@@ -59,7 +59,7 @@ promo code, enterprise floor pricing, and Sarah Williams' full customer
 record all land in the user's screen as a clean JSON object — like the
 LLM helpfully documented the secrets for the attacker:
 
-![Hijacked agent output as JSON](docs/screenshots/03_attack_05.png)
+![Hijacked agent output as JSON](docs/screenshots/02_attack_05.png)
 
 The "JSON format" framing bypassed the model's refusal training because it
 doesn't read as a meta-query about the system prompt — it reads as a request
