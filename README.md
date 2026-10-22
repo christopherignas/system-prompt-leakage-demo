@@ -83,11 +83,14 @@ ask, debug persona) get refused. The creative reframings slip through.
 
 ## Quick start
 
+Use Python 3.12 or later (`.python-version`). Python 3.9 and 3.10 bundle a pip older than 26.2.2, which still trusts the compromised eMudhra/emSign CAs ([GHSA-hq85-5cpj-mr62](https://github.com/advisories/GHSA-hq85-5cpj-mr62)). This repo requires **pip>=26.2.2**. After activating the venv, upgrade pip and certifi before installing dependencies:
+
 ```bash
 git clone https://github.com/christopherignas/system-prompt-leakage-demo
 cd system-prompt-leakage-demo
 
 python -m venv .venv && source .venv/bin/activate
+python -m pip install --upgrade pip certifi
 pip install -r requirements.txt
 
 cp .env.example .env
